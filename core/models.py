@@ -68,3 +68,22 @@ class Funcionario(Base):
         return self.nome
 
 
+class Funcao(Base):
+    ICONE_CHOICES = (
+        ('lni-rocket', 'Foguete'),
+        ('lni-laptop-phone', 'Dispositivos'),
+        ('lni-cog', 'Engrenagem'),
+        ('lni-leaf', 'Folha'),
+        ('lni-layers', 'Camadas')
+    )
+
+    funcao = models.CharField('Função', max_length=100)
+    descricao = models.TextField('Descrição', max_length=200)
+    icone = models.CharField('Ícone', max_length=17, choices=ICONE_CHOICES)
+
+    class Meta:
+        verbose_name = 'Função'
+        verbose_name_plural = 'Funções'
+    
+    def __str__(self):
+        return self.funcao

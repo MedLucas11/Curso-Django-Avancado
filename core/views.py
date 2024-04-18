@@ -5,6 +5,8 @@ from django.contrib import messages
 from django.views.generic import FormView
 from .models import Servico, Funcionario, Funcao
 from .forms import ContatoForm
+from django.utils.translation import gettext as _
+from django.utils import translation
 
 
 class IndexView(FormView):
@@ -14,17 +16,20 @@ class IndexView(FormView):
 
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
+        lang = translation.get_language()
         context['servicos'] = Servico.objects.order_by('?').all()
         context['funcionario'] = Funcionario.objects.order_by('?').all()
         context['funcoes'] = list(Funcao.objects.all())
+        context['lang'] = lang
+        translation.activate(lang)
         return context
 
     def form_valid(self, form, *args, **kwargs):
         form.send_mail()
-        messages.success(self.request, 'E-mail enviado com sucesso!')
+        messages.success(self.request, _('E-mail enviado com sucesso!'))
         return super(IndexView, self).form_valid(form, *args, **kwargs)
     
     def form_invalid(self, form, *args, **kwargs):
-        messages.error(self.request, 'Erro ao enviar o e-mail')
+        messages.error(self.request, _('Erro ao enviar o e-mail'))
         return super(IndexView, self).form_invalid(form, *args, **kwargs)
 

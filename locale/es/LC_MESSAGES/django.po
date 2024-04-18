@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-18 14:20-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\core\forms.py:7 .\core\forms.py:18 .\core\models.py:56
+msgid "Nome"
+msgstr ""
+
+#: .\core\forms.py:8
+msgid "Email"
+msgstr ""
+
+#: .\core\forms.py:9 .\core\forms.py:20
+msgid "Assunto"
+msgstr ""
+
+#: .\core\forms.py:10 .\core\forms.py:21
+msgid "Mensagem"
+msgstr ""
+
+#: .\core\forms.py:19
+msgid "E-mail"
+msgstr ""
+
+#: .\core\models.py:14
+msgid "Criação"
+msgstr ""
+
+#: .\core\models.py:15
+msgid "Atualização"
+msgstr ""
+
+#: .\core\models.py:16
+msgid "Ativo?"
+msgstr ""
+
+#: .\core\models.py:24 .\core\models.py:76
+msgid "Engrenagem"
+msgstr ""
+
+#: .\core\models.py:25
+msgid "Gráfico"
+msgstr ""
+
+#: .\core\models.py:26
+msgid "Usuários"
+msgstr ""
+
+#: .\core\models.py:27
+msgid "Design"
+msgstr ""
+
+#: .\core\models.py:28
+msgid "Mobile"
+msgstr ""
+
+#: .\core\models.py:29 .\core\models.py:74
+msgid "Foguete"
+msgstr ""
+
+#: .\core\models.py:32 .\core\models.py:37
+msgid "Serviço"
+msgstr ""
+
+#: .\core\models.py:33 .\core\models.py:82
+msgid "Descrição"
+msgstr ""
+
+#: .\core\models.py:34 .\core\models.py:83
+msgid "Ícone"
+msgstr ""
+
+#: .\core\models.py:38
+msgid "Serviços"
+msgstr ""
+
+#: .\core\models.py:45 .\core\models.py:48 .\core\models.py:57
+msgid "Cargo"
+msgstr ""
+
+#: .\core\models.py:49
+msgid "Cargos"
+msgstr ""
+
+#: .\core\models.py:58
+msgid "Bio"
+msgstr ""
+
+#: .\core\models.py:59
+msgid "Imagem"
+msgstr ""
+
+#: .\core\models.py:65
+msgid "Funcionário"
+msgstr ""
+
+#: .\core\models.py:66
+msgid "Funcionários"
+msgstr ""
+
+#: .\core\models.py:75
+msgid "Dispositivos"
+msgstr ""
+
+#: .\core\models.py:77
+msgid "Folha"
+msgstr ""
+
+#: .\core\models.py:78
+msgid "Camadas"
+msgstr ""
+
+#: .\core\models.py:81 .\core\models.py:86
+msgid "Função"
+msgstr ""
+
+#: .\core\models.py:87
+msgid "Funções"
+msgstr ""
+
+#: .\core\views.py:29
+msgid "E-mail enviado com sucesso!"
+msgstr ""
+
+#: .\core\views.py:33
+msgid "Erro ao enviar o e-mail"
+msgstr ""

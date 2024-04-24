@@ -20,7 +20,7 @@ class ContatoForm(forms.Form):
         a = _('Assunto')
         m = _('Mensagem')
 
-        conteudo = f'{n}: {nome}\n{e}: {email}\n {a}: {assunto}\n {m}: {mensagem}'
+        conteudo = f'{n}: {nome}\n{e}: {email}\n{a}: {assunto}\n{m}: {mensagem}'
 
         mail = EmailMessage(
             subject=assunto,
